@@ -5,7 +5,7 @@ const todoControl = document.querySelector('.todo-control'),
       todoList = document.querySelector('.todo-list'),
       todoCompleted = document.querySelector('.todo-completed');
 
-const todoData =  localStorage.getItem('todo') ? JSON.parse(locoalStorage.getItem('todo')) : [] ; 
+const todoData =  localStorage.getItem('todo') ? JSON.parse(localStorage.getItem('todo')) : [] ; 
 
 
 const render = function() {
