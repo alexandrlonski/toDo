@@ -22,10 +22,10 @@ const render = function() {
                    '</div>';
       
           if(item.completed){
-             todoCompleted.append(li);
+             todoCompleted.prepend(li);
               localStorage.setItem('todo', JSON.stringify(todoData));
            } else {
-             todoList.append(li);
+             todoList.prepend(li);
               localStorage.setItem('todo', JSON.stringify(todoData));
           }
     
